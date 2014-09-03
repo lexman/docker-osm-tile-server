@@ -59,8 +59,9 @@ RUN wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sud
 
 RUN apt-get update
 
-RUN apt-get install postgresql-9.3-postgis-2.1 postgresql-contrib
-
-
 RUN apt-get install -y \
-postgresql-9.1-postgis postgresql-contrib postgresql-server-dev-9.1
+    postgresql-9.3-postgis-2.1 \
+    postgresql-contrib
+
+EXPOSE 5432
+
