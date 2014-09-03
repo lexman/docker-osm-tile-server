@@ -5,7 +5,7 @@ MAINTAINER Alexandre Bonnasseau
 
 RUN apt-get update 
 RUN apt-get install -y \
-    locales \
+    locales
 
 RUN dpkg-reconfigure locales && \
     locale-gen C.UTF-8 && \
