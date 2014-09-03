@@ -1,4 +1,5 @@
 #!/bin/sh
 
-docker build -t abonnasseau/osm-tile-server
+docker pull debian
+docker build .
 docker run -d -P abonnasseau/osm-tile-server
